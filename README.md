@@ -4,5 +4,18 @@
 **Installing AZ module**  
 `Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force`  
 
-**Connecting to Azure Account**
-`Connect-AzAccount`
+**Connecting to Azure Account**  
+`Connect-AzAccount`  
+  
+**Connecting SSH**  
+`ssh -i <path to .pem> azureuser@40.76.200.111`
+  
+**Installing Apache**  
+```
+sudo apt update -y
+sudo apt install -y apache2
+sudo systemctl start apache2
+```
+
+**To verify if port 80 is open**  
+https://ping.eu/port-chk/
