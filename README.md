@@ -18,5 +18,13 @@ sudo systemctl start apache2
 sudo systemctl status apache2
 ```
 
+**Create new Resource Group**  
+`New-AzResourceGroup -Name GR-AZ-400 -Location 'EastUS'`
+
+**Create new VM**  
+New-AzVM -ResourceGroupName 'GR-AZ-400' -Location 'EastUS' -Name 'pwrsdemo' -PublicIpAddressName 'MyPublicIP' -OpenPort 80, 443
+
+
+
 **To verify if port 80 is open**  
 https://ping.eu/port-chk/
