@@ -22,7 +22,9 @@ sudo systemctl status apache2
 `New-AzResourceGroup -Name GR-AZ-400 -Location 'EastUS'`
 
 **Create new VM**  
-New-AzVM -ResourceGroupName 'GR-AZ-400' -Location 'EastUS' -Name 'pwrsdemo' -PublicIpAddressName 'MyPublicIP' -OpenPort 80, 443
+`New-AzVM -ResourceGroupName 'GR-AZ-400' -Location 'EastUS' -ViertualNetworkName 'MyVMNet' -SubnetName 'default' -SecurityGroupName 'MyNSG'  -Name 'pwrsdemo' -PublicIpAddressName 'MyPublicIP' -OpenPort 80, 443`
+
+
 
 
 
